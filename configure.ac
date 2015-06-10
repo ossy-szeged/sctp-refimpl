@@ -54,7 +54,7 @@ freebsd*)
   LIBCFLAGS="$LIBCFLAGS -U__FreeBSD__ -D__Userspace_os_FreeBSD"
   ;;
 linux*)
-  CFLAGS="$CFLAGS -Wall -Werror -pthread -D_GNU_SOURCE"
+  CFLAGS="$CFLAGS -Wall -Werror -Wno-parentheses-equality -pthread -D_GNU_SOURCE"
   LIBCFLAGS="$LIBCFLAGS  -D__Userspace_os_Linux"
   ;;
 netbsd*)
